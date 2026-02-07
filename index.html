@@ -147,6 +147,21 @@
                                 </ul>
                             </div>
 
+                            <!-- Beginner Deep Dive: Introduction -->
+                            <div class="edu-deep-dive">
+                                <div class="edu-deep-dive-header">
+                                    <i class="bi bi-mortarboard-fill"></i> New to this system?
+                                </div>
+                                <p class="small text-muted mb-3">
+                                    This manual uses concepts from <strong>ICT (Inner Circle Trader)</strong>. If you're
+                                    new to these terms, look for the purple highlighted words for quick definitions.
+                                </p>
+                                <a href="https://www.youtube.com/watch?v=TNSeWfI2WAE" target="_blank"
+                                    class="edu-deep-dive-btn">
+                                    <i class="bi bi-play-fill"></i> Watch: Market Structure Masterclass
+                                </a>
+                            </div>
+
                             <div class="tier-item">
                                 <div class="tier-header">
                                     <span class="tier-number">2</span>
@@ -346,6 +361,18 @@
 
                         <div class="card content-card">
                             <div class="card-body">
+                                <!-- Beginner Deep Dive: HTF -->
+                                <div class="edu-deep-dive">
+                                    <div class="edu-deep-dive-header">
+                                        <i class="bi bi-diagram-3-fill"></i> Why use Higher Timeframes?
+                                    </div>
+                                    <p class="small text-muted mb-2">
+                                        Trading with the "Higher Timeframe" (HTF) is like looking at a map before
+                                        driving. It helps you see the major trend so you don't get caught in the "noise"
+                                        of smaller moves.
+                                    </p>
+                                </div>
+
                                 <!-- Educational Videos -->
                                 <div class="edu-videos" id="edu-market-structure">
                                     <div class="edu-videos-header">
@@ -1860,6 +1887,21 @@
 
                         <div class="card content-card">
                             <div class="card-body">
+                                <!-- Beginner Deep Dive: Risk -->
+                                <div class="edu-deep-dive">
+                                    <div class="edu-deep-dive-header">
+                                        <i class="bi bi-shield-lock-fill"></i> Protect Your Capital
+                                    </div>
+                                    <p class="small text-muted mb-2">
+                                        Risk Management is the secret to staying in the game. Most pro traders never
+                                        risk more than <strong>1% of their account</strong> on a single trade.
+                                    </p>
+                                    <a href="https://www.youtube.com/watch?v=6-PHAJrEbls" target="_blank"
+                                        class="edu-deep-dive-btn">
+                                        <i class="bi bi-play-fill"></i> Watch: Risk Management Basics
+                                    </a>
+                                </div>
+
                                 <!-- Educational Videos -->
                                 <div class="edu-videos" id="edu-risk-management">
                                     <div class="edu-videos-header">
@@ -2874,6 +2916,80 @@
                     handleSectionChange(hash.substring(1));
                 }, 200);
             }
+
+            // --- Beginner-Friendly Glossary System ---
+            const glossary = {
+                'HTF': 'Higher Timeframe: A chart timeframe longer than your current one (e.g., Daily vs 1-Hour), used to find the "big picture" trend.',
+                'LTF': 'Lower Timeframe: A shorter timeframe (e.g., 5-Minute) used to find precise entry points after analyzing the HTF.',
+                'POI': 'Point of Interest: A specific area on the chart where institutional activity is expected and a trade setup might form.',
+                'OB': 'Order Block: A footprint of institutional buying or selling that often acts as a pivot for price reversals.',
+                'FVG': 'Fair Value Gap: An imbalance in price action where a large, fast move leaves a gap that price often returns to fill.',
+                'SFP': 'Swing Failure Pattern: A reversal move where price "sweeps" a high or low but fails to close beyond it, trapping traders.',
+                'MSB': 'Market Structure Break: A sign that a trend has changed, occurring when price breaks a previous high or low.',
+                'MSS': 'Market Structure Shift: A more aggressive, early signal of a potential change in trend direction.',
+                'Liquidity': 'Areas where many stop-loss orders are likely clustered. Big players often "hunt" this liquidity before moving price.',
+                'Risk Management': 'The practice of protecting your trading capital using stop-losses and controlled position sizes.',
+                'Position Sizing': 'Calculating exactly how much money to put into a trade so you only lose a fixed % (like 1%) of your account if your stop-loss is hit.',
+                'Killzone': 'Specific times of day (like New York open) when market volume is high and the best trade setups usually form.'
+            };
+
+            const tooltip = document.createElement('div');
+            tooltip.id = 'term-tooltip-root';
+            document.body.appendChild(tooltip);
+
+            function initGlossary() {
+                const contentSections = document.querySelectorAll('.card-body p, .card-body li, .tier-description, .alert-info');
+                contentSections.forEach(section => {
+                    let html = section.innerHTML;
+
+                    // Replace terms with spans, ensuring we don't break existing HTML tags
+                    Object.keys(glossary).forEach(term => {
+                        const regex = new RegExp(`\\b(${term})\\b(?![^<]*>)`, 'g');
+                        html = html.replace(regex, `<span class="term-highlight" data-term="$1">$1</span>`);
+                    });
+
+                    section.innerHTML = html;
+                });
+
+                // Simple listener for mousemove to position tooltip
+                document.addEventListener('mousemove', (e) => {
+                    if (tooltip.classList.contains('visible')) {
+                        updateTooltipPos(e);
+                    }
+                });
+
+                document.querySelectorAll('.term-highlight').forEach(el => {
+                    const term = el.getAttribute('data-term');
+                    el.addEventListener('mouseenter', (e) => {
+                        tooltip.innerHTML = `<span class="tooltip-title">${term}</span>${glossary[term]}`;
+                        tooltip.classList.add('visible');
+                        updateTooltipPos(e);
+                    });
+                    el.addEventListener('mouseleave', () => {
+                        tooltip.classList.remove('visible');
+                    });
+                });
+            }
+
+            function updateTooltipPos(e) {
+                const x = e.clientX + 15;
+                const y = e.clientY + 15;
+
+                // Adjust if too close to right edge
+                const width = 280;
+                const height = tooltip.offsetHeight;
+                let posX = x;
+                let posY = y;
+
+                if (x + width > window.innerWidth) posX = e.clientX - width - 15;
+                if (y + height > window.innerHeight) posY = e.clientY - height - 15;
+
+                tooltip.style.left = `${posX}px`;
+                tooltip.style.top = `${posY}px`;
+            }
+
+            // Start glossary after a small delay to ensure content is rendered
+            setTimeout(initGlossary, 500);
         });
     </script>
 </body>
