@@ -91,6 +91,7 @@ body {
 .sidebar-left {
     width: var(--sidebar-left-width);
     height: 100vh;
+    height: 100dvh;
     background-color: var(--bg-sidebar);
     border-right: 1px solid var(--border-color);
     position: fixed;
@@ -100,6 +101,7 @@ body {
     flex-direction: column;
     z-index: 100;
     overflow-y: auto;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Main Content */
@@ -122,6 +124,7 @@ body {
 .sidebar-right {
     width: var(--sidebar-right-width);
     height: 100vh;
+    height: 100dvh;
     position: fixed;
     right: 0;
     top: 0;
@@ -129,6 +132,7 @@ body {
     overflow-y: auto;
     border-left: 1px solid var(--border-color);
     background-color: var(--bg-primary);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* ========================================
@@ -356,7 +360,7 @@ body {
 }
 
 .sidebar-footer {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem calc(1rem + env(safe-area-inset-bottom));
     border-top: 1px solid var(--border-color);
 }
 
