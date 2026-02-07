@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG Pro Manual - Complete Guide</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h3><span class="brand-img">📊</span> IMG Pro Manual</h3>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li><a href="#getting-started" class="nav-link-sidebar">Getting Started</a></li>
+                <li><a href="#basic-settings" class="nav-link-sidebar">Basic Settings</a></li>
+                <li><a href="#backtest-settings" class="nav-link-sidebar">Backtest Settings</a></li>
+                <li><a href="#htf-pois" class="nav-link-sidebar">HTF POIs</a></li>
+                <li><a href="#trade-setups" class="nav-link-sidebar">Trade Setups</a></li>
+                <li><a href="#entries-exits" class="nav-link-sidebar">Entries & Exits</a></li>
+                <li><a href="#invalidations" class="nav-link-sidebar">Invalidations</a></li>
+                <li><a href="#risk-management" class="nav-link-sidebar">Risk Management</a></li>
+                <li><a href="#sessions" class="nav-link-sidebar">Trading Sessions</a></li>
+                <li><a href="#order-conditions" class="nav-link-sidebar">Order Conditions</a></li>
+                <li><a href="#alerts" class="nav-link-sidebar">Alerts</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 class="display-3 fw-bold mb-4">IMG Pro Manual</h1>
+                        <p class="lead text-muted mb-4">
+                            Complete documentation for the IMG Pro indicator - your time-saving tool for ICT-based price
+                            action trading
+                        </p>
+                        <a href="#getting-started" class="btn btn-primary btn-lg px-5 py-3">Start Learning</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container my-5">
+    <!-- Section: Indicator Tiers -->
+    <section id="indicator-tiers" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Indicator Tiers</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <ol class="setup-steps">
+                    <li>> <strong>IMG Basic</strong></li>
+                </ol>
+                <div class="alert alert-info">Free Educational tool that highlights:</div>
+                <ul class="feature-list">
+                    <li>> Higher Timeframe (HTF) Market Structure Ranges</li>
+                    <li>> HTF Points of Interest (POIs): Order Blocks (OBs) and Breakers</li>
+                    <li>> HTF Market Structure Break (MSB) Alerts</li>
+                    <li>> <strong>IMG Lite</strong></li>
+                </ul>
+                <div class="alert alert-info">Everything in Basic, plus:</div>
+                <ul class="feature-list">
+                    <li>> Additional HTF POI: FVGs</li>
+                    <li>> HTF-LTF Trade Setup Alerts at HTF Market Structure Extremes</li>
+                    <li>> LTF-LTF Trade Setup Alerts at enabled HTF POIs</li>
+                    <li>> Automatic Position Sizing / Risk Management</li>
+                    <li>> Fixed R:R Exits</li>
+                </ul>
+                <div class="alert alert-info">3.  <strong>IMG Core:</strong></div>
+                <div class="alert alert-info">Everything in Lite, plus:</div>
+                <ul class="feature-list">
+                    <li>> Extend untested HTF POIs</li>
+                    <li>> HTF-LTF Setups at Enabled HTF POIs</li>
+                    <li>> Fluid Exits (exit on opposite signals)</li>
+                    <li>> Customisable Max Trade Risk</li>
+                </ul>
+                <div class="alert alert-info">4.  <strong>IMG PRO:</strong></div>
+                <div class="alert alert-info">Everything in Core, plus:</div>
+                <ul class="feature-list">
+                    <li>> <strong>Additional HTF POIs:</strong></li>
+                    <li>>> OB+FVG Overlaps</li>
+                    <li>>> Breaker + FVG Overlaps</li>
+                    <li>>> Internal Liquidity Levels,</li>
+                    <li>> All HTF-LTF Trade Setups at HTF Liquidity Levels (With trend and Counter Trend)</li>
+                    <li>> 5 Entry and 4 Exit Modes + Alerts</li>
+                    <li>> 2 Early Warning Systems</li>
+                    <li>> Custom Premium / Discount Levels</li>
+                    <li>> Customisable Trade Invalidations</li>
+                    <li>> Multiple Structure Break types</li>
+                    <li>> Automated backtesting system</li>
+                    <li>> <strong>Additional Indicator Systems:</strong></li>
+                    <li>>> <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/DD23549C-A6B1-42E9-B859-44AFD0BB971B?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#C71EB56C-1E9F-41D7-985C-37DD107864AB" target="_blank">Trend Filter Companion indicator</a></li>
+                    <li>>> Auto Anchored VWAP indicator</li>
+                </ul>
+                <div class="alert alert-info">Join us here: <a href="https://discord.gg/sedwQukRh5" target="_blank">IMG PRO Discord</a> for expedited customer service and access to the community</div>
+    </section>
+
+    <!-- Section: System Access -->
+    <section id="system-access" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">System Access</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">Join us here: <a href="https://discord.gg/sedwQukRh5" target="_blank">IMG PRO Discord</a> for expedited customer service and access to the community</div>
+                <h5 class="mt-3">To gain access to this system:</h5>
+                <ol class="setup-steps">
+                    <li>> Setup an account at:</li>
+                </ol>
+                <p><a href="https://www.imgpro.ai" target="_blank">IMG - An Essential Toolkit For Price Action Traders</a></p>
+                <ol class="setup-steps">
+                    <li>> Select a product tier that suits your trading style </li>
+                    <li>> Subscribe for access within 24 hours</li>
+                    <li>> You will find the indicator(s) in the invite only scripts section of tradingview:</li>
+                </ol>
+                <img src="images/Invite_Only_Scripts_Screenshot.png" alt="Invite_Only_Scripts_Screenshot.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">
+                <div class="alert alert-info"><strong>User Manuals:</strong></div>
+                <div class="alert alert-info"># Price Action: IMG Pro</div>
+                <div class="alert alert-info"># Getting Started</div>
+                <p><a href="https://youtu.be/8_-3hp2PtqI?si=TF2VPXTyrvaW3aNJ" target="_blank">How to use the IMG Indicator</a></p>
+        <div class="card content-card">
+            <div class="card-body">
+                <h4 class="card-title">Introduction to IMG Pro</h4>
+                <div class="alert alert-info">The primary function of this indicator is to serve as a as a <strong>time-saving tool</strong> for those who follow Trader Mayne and TraderZS1's ICT based price action trading system, which is to:</div>
+                <ul class="feature-list">
+                    <li>> Identify Higher Timeframe Points of Interest (POIs)</li>
+                    <li>> Look for potential Trade Setups at HTF POIs</li>
+                    <li>> Identify Targets</li>
+                    <li>> Calculate Position Size / Manage Risk</li>
+                </ul>
+                <p><strong>At its core, the Indicator operates in a structured manner to:</strong></p>
+                <ol class="setup-steps">
+                    <li>> <strong>Identify HTF POIs:</strong></li>
+                    <li>> Range Extremes</li>
+                    <li>> Order Blocks (OBs)</li>
+                    <li>> Breakers</li>
+                    <li>> Fair Value Gaps (FVGs) / OBs+FVGs / Breakers+FVGs</li>
+                    <li>> Internal Liquidity Levels</li>
+                </ol>
+                <div class="alert alert-info">2.  <strong>Provide Potential Trade Setup Alerts</strong></div>
+                <ul class="feature-list">
+                    <li>> HTF SFP followed by a LTF MSB</li>
+                    <li>> LTF SFP followed by a LTF MSB (OBs / Breakers / FVGs only)</li>
+                </ul>
+                <div class="alert alert-info">3.  <strong>Automatically Calculate and Alert to</strong>: Entries, Stops, Targets and Position Sizes</div>
+                <ol class="setup-steps">
+                    <li>> <strong>Issue Exit Alerts (TP / SL)</strong></li>
+                </ol>
+                <div class="alert alert-info">The primary goal of this indicator is to reduce the time traders spend analysing charts by providing alerts to potential setups in real-time, following the rules outlined above. Over and above this, additional features and options are available in the PRO tier. The system can be used with various timeframe combinations (Weekly-H12 / H12-H1 / H4-M15 / H1-M5, etc.), making it suitable for different trading styles like scalping, swing trading, or investing</div>
+    </section>
+
+    <!-- Section: Basic Settings -->
+    <section id="basic-settings" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Basic Settings</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <img src="images/Image.png" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">
+                <div class="alert alert-info">Click on a card below for details on each of these settings:</div>
+    </section>
+
+    <!-- Section: HTF Structure -->
+    <section id="htf-structure" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">HTF Structure</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <p>Use this dropdown located at the top of the settings panel to calculate and display a higher timeframe’s <strong>Market</strong> <strong>Structure (MS)</strong> and its corresponding <strong><a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/2063CB73-9B07-4401-A7F2-1B8F1E190A25?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#D563A28C-BCEB-4C89-B93D-FDA7671EE7B7" target="_blank">Points of Interest (POIs)</a>.</strong> In order for the timeframe of your choice to appear in this dropdown you need to ensure it is selected as a favourite in your Tradingview timeframes dropdown. If you would like to use a non-standard timeframe, you will first need to <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/DE941EBB-4D5F-4B17-8577-8B669E670684?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#F9E90139-FB26-4930-8C16-8F60EDFB3BA1" target="_blank">create a custom timeframe</a> and then add it to your favourites.</p>
+    </section>
+
+    <!-- Section: Creating a Custom Timeframe in Tradingview -->
+    <section id="creating-a-custom-timeframe-in-tradingview" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Creating a Custom Timeframe in Tradingview</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <ol class="setup-steps">
+                    <li>Select the timeframe dropdown located above your chart</li>
+                </ol>
+                <img src="images/Image (2" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <ol class="setup-steps">
+                    <li>Scroll to the bottom of the list, enter your custom timeframe and click on “Add”</li>
+                </ol>
+                <img src="images/154FC552-617A-4A7D-9694-5E23763BF24E.jpeg" alt="154FC552-617A-4A7D-9694-5E23763BF24E.jpeg" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">
+                <ol class="setup-steps">
+                    <li>Add the new custom timeframe to your favourites by going back to the timeframe dropdown and clicking on the star next to it. Once Starred, it will display in your timeframe favourites bar</li>
+                </ol>
+                <img src="images/BE6472D4-C843-4859-B3FE-B348DFCCD81E.jpeg" alt="BE6472D4-C843-4859-B3FE-B348DFCCD81E.jpeg" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">
+                <ol class="setup-steps">
+                    <li>Your custom timeframe will now appear in the Indicator’s timeframe dropdown</li>
+                </ol>
+                <p>Once you have selected your preferred HTF Structure timeframe from the dropdown, it’s Market Structure is displayed in the form of a range high and low. MS Bias will be displayed as Bullish=Green and Bearish=Red throughout this Knowledge Base but colours are customisable in the style section of settings</p>
+                <div class="alert alert-info">Example:</div>
+                <div class="alert alert-info">H12 Market Structure highs and lows are displayed on a H1 chart for BTCUSDT.p Bybit.</div>
+                <p><a href="https://www.tradingview.com/x/v1t0srD8/" target="_blank">BYBIT:BTCUSDT.P Chart Image by IMGPro</a></p>
+                <img src="images/Image (3" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info"><strong>Structure Limitations</strong>:</div>
+                <div class="alert alert-info">The highest timeframe structure that can be selected in the dropdown is one Week. To access anything over one week, you will need to create a custom timeframe with a multiple of the Weekly timeframe and then apply it from the dropdown:</div>
+                <div class="alert alert-info">To apply a monthly range, you will need to select 4 Weeks in the dropdown</div>
+                <div class="alert alert-info">To apply a yearly range, you will need to select 52 Weeks in the dropdown etc.</div>
+    </section>
+
+    <!-- Section: HTF Break Type -->
+    <section id="htf-break-type" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">HTF Break Type</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <p>The system has various options to determine structure breaks:</p>
+                <ol class="setup-steps">
+                    <li>> <strong>MSB (Market Structure Break)</strong></li>
+                </ol>
+                <p>This is the most common and conservative technique that calculates structure and breaks using the following rules:</p>
+                <p><strong>Bearish Structure:</strong></p>
+                <p>(a) Structure High: The three bar pivot high that caused the previous structure break </p>
+                <p>(b) Structure Low: The first three bar pivot low that forms after a structure break</p>
+                <p><strong>Bullish Structure:</strong></p>
+                <p>(b) Structure Low: The three bar pivot low that caused the previous structure break </p>
+                <p>(a) Structure High: The first three bar pivot high that forms after a structure break</p>
+                <img src="images/Image (4" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> <strong>First Opposite Pivot (MSS) - Aggressive</strong></li>
+                </ol>
+                <p>A more aggressive approach to calculate structure and breaks using the following rules:</p>
+                <p><strong>Bearish Structure:</strong></p>
+                <p>(a) Structure High: <strong>The first opposite three bar pivot high after a structure break</strong> </p>
+                <p>(b) Structure Low: The first three bar pivot low that forms after a structure break</p>
+                <p><strong>Bullish Structure:</strong></p>
+                <p>(b) Structure Low: <strong>The first opposite three bar pivot high after a structure break</strong> </p>
+                <p>(a) Structure High: The first three bar pivot high that forms after a structure break</p>
+                <img src="images/Image (5" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info"><strong>Closest Opposite Pivot (MSS) - Very Aggressive</strong></div>
+                <p>More aggressive than the last to calculate structure and breaks using the following rules:</p>
+                <p><strong>Bearish Structure:</strong></p>
+                <p>(a) Structure High: <strong>The closest unbroken opposite three bar pivot high to price after a structure break</strong> </p>
+                <p>(b) Structure Low: The first three bar pivot low that forms after a structure break</p>
+                <p><strong>Bullish Structure:</strong></p>
+                <p>(b) Structure Low: <strong>The closest unbroken opposite three bar pivot low to price after a structure break</strong> </p>
+                <p>(a) Structure High: The first three bar pivot high that forms after a structure break</p>
+                <img src="images/Image (6" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info"><strong>Closest Pivot (MSS) - Extremely Aggressive</strong></div>
+                <p>Extremely aggressive approach that applies the closest pivot logic to both sides of the range:</p>
+                <p><strong>Bearish Structure:</strong></p>
+                <p>(a) Structure High: <strong>The closest unbroken opposite three bar pivot high to price after a structure break</strong> </p>
+                <p>(b) Structure Low: <strong>The closest unbroken opposite three bar pivotlow to price after a structure break</strong> </p>
+                <p><strong>Bullish Structure:</strong></p>
+                <p>(b) Structure Low: <strong>The closest unbroken opposite three bar pivot low to price after a structure break</strong> </p>
+                <p>(a) Structure High:  <strong>The closest unbroken opposite three bar pivot high to price after a structure break</strong> </p>
+                <img src="images/Image (7" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+    </section>
+
+    <!-- Section: Hide Historical -->
+    <section id="hide-historical" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Hide Historical</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <p>This toggle will hide all historical Market Structures and associated Points of Interest. If toggled on, only the current HTF Market Structure and associated information will be displayed.</p>
+                <div class="alert alert-info">Example toggled OFF:</div>
+                <img src="images/Image (8" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">Example toggled OFF:</div>
+                <img src="images/Image (9" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+    </section>
+
+    <!-- Section: Display 50% Range Line -->
+    <section id="display-50%-range-line" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Display 50% Range Line</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <p>This toggle will display the HTF Structure’s mid point in the form of a dashed line.</p>
+                <div class="alert alert-info">Example toggled ON:</div>
+                <img src="images/Image (10" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+    </section>
+
+    <!-- Section: Equal Highs / Lows as Pivots -->
+    <section id="equal-highs---lows-as-pivots" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Equal Highs / Lows as Pivots</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <p>This toggle will allow you to identify up to three sequential equal highs as pivot highs if they are preceded and superseded by lower highs and vice versa for pivot lows.</p>
+                <p>Examples (Prices in <strong>Bold</strong> <strong>Yellow</strong> are the pivot points if this feature is toggled on): Case 1: Price points: 104 100 <strong>103</strong> 100 102 (<strong>simple pivot</strong> -- piv is bar 3)</p>
+                <p>Case 2: 100 103 <strong>103</strong> 100 101 (<strong>eq pivot from left</strong> -- piv is bar 3)</p>
+                <p>Case 3: 100 101 103 <strong>103</strong> 101 (<strong>eq pivot from right</strong> -- piv is bar 4)</p>
+                <p>Case 4: 100 103 103 <strong>103</strong> 100 (<strong>eq pivot</strong> -- piv is bar 4)</p>
+    </section>
+
+    <!-- Section: Chart TF and Alerts -->
+    <section id="chart-tf-and-alerts" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Chart TF and Alerts</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">Hide Signals if Chart TF = HTF Structure TF:</div>
+                <p>This toggle will hide ALL trade setups, signals, invalidations etc if the chart timeframe is equal to the selected HTF structure timeframe. Can be used to clean up the chart when switching to the HTF Structure Timeframe.</p>
+                <div class="alert alert-info">Alerts:</div>
+                <p>Select the method for managing TradingView alerts </p>
+                <p><strong>ALL:</strong> TradingView alerts will notify you of every alert according to your configurations, including Trade Setups, Stop Losses, Take Profits, Invalidations, and more.</p>
+                <p><strong>Valid Signals Only:</strong> TradingView will notify you exclusively of legitimate trade setups and Take Profit levels based on your settings</p>
+                <div class="alert alert-info">Note: You must configure the alerts on TradingView independently. For guidance, consult the <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/3A76430B-92A2-4CE3-983D-FE4FFD8B2F79?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#F057681E-3023-4069-8DBB-B44F2C604B13" target="_blank">alerts section</a></div>
+    </section>
+
+    <!-- Section: Backtest Settings -->
+    <section id="backtest-settings" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Backtest Settings</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info"><strong>Disclaimer:</strong> Past performance is not indicative of future results, a principle that applies to all backtesting, whether manual or automated</div>
+                <img src="images/Image (11" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">Basic Settings:</div>
+                <p>| <strong>Table Size</strong>                   | Select the backtest results table size to display on the top right of your chart                                                     |</p>
+                <p>| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |</p>
+                <p>| <strong>Disable Backtester</strong>           | Enable/Disable the backtesting system                                                                                                |</p>
+                <p>| <strong>Custom</strong> <strong>Start Date Toggle</strong> | Toggle on to enable a custom start date for backtesting (the system will begin from the beginning of your chart if this is disabled) |</p>
+                <p>| <strong>Custom</strong> <strong>Start Date</strong>        | Enter the custom date / time for backtesting to begin from                                                                           |</p>
+                <div class="alert alert-info">The backtesting system will provide the following details based on the applied settings</div>
+                <p>| <strong>Initial Capital</strong>                 | The starting balance of your account at the beginning of the backtest. This is entered in the Risk Management Section in settings                                                                                   |</p>
+                <p>| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |</p>
+                <p>| <strong>Available</strong> <strong>Capital</strong>           | Current available capital based on the backtest results of all <strong>closed</strong> trades                                                                                                                                    |</p>
+                <p>| <strong>Net Profit</strong>                      | Total Profit or Loss achieved in the backtest                                                                                                                                                                       |</p>
+                <p>| <strong>Closed Trades</strong>                   | Total number of closed trades in the backtest                                                                                                                                                                       |</p>
+                <p>| <strong>BE Trades</strong>                       | Total number of Break Even trades during the backtest                                                                                                                                                               |</p>
+                <p>| <strong>Delta</strong> <strong>Trades</strong>                | Total number of trades that were not break even during the backtest                                                                                                                                                 |</p>
+                <p>| <strong>Winning</strong> <strong>Trades</strong>              | Total number of winning trades                                                                                                                                                                                      |</p>
+                <p>| <strong>Max</strong> <strong>Drawdown</strong>                | The largest single drop in capital value from all closed trades during the backtest period. The Peak and Trough dates and trade IDs are provided in the results tables to easily find and analyse them on the chart |</p>
+                <p>| <strong>Profit</strong> <strong>Factor</strong>               | Total value of all winning trades divided by the total value of all losing trades                                                                                                                                   |</p>
+                <p>| <strong>Open</strong> <strong>Trades</strong>                 | Total number of current open trades                                                                                                                                                                                 |</p>
+                <p>| <strong>Max Win</strong>                         | Largest win during the backtest period. Max winning trade date and trade ID is provided in the results tables to easily find and analyse it on the chart                                                            |</p>
+                <p>| <strong>Max Loss</strong>                        | Largest loss during the backtest period.                                                                                                                                                                            |</p>
+                <p>| <strong>Avg Trade Win</strong>                   | Average win / loss of all closed trades                                                                                                                                                                             |</p>
+                <p>| <strong>Avg Profit Per Trade</strong>            | Average Profit/Loss based on all closed trades in the backtest                                                                                                                                                      |</p>
+                <p>| <strong>Avg Bars Per Trade</strong>              | Average duration of each trade calculated in chart timeframe bars                                                                                                                                                   |</p>
+                <p>| <strong>Current</strong> <strong>Portfolio</strong> <strong>Value</strong> | Current capital taking into account all closed trades during the backtest                                                                                                                                           |</p>
+                <p>| <strong>Buy and Hold P&L</strong>                | Profit or Loss if the instrument was purchased and held at the backtest start date                                                                                                                                  |</p>
+                <p>| <strong>Outperform</strong>                      | Indicator performance vs Buy & Hold P&L                                                                                                                                                                             |</p>
+                <p>| <strong>Start Date</strong>                      | Start date of the Backtest                                                                                                                                                                                          |</p>
+                <div class="alert alert-info"><strong>Colour</strong> <strong>Coding</strong></div>
+                <div class="alert alert-info">The table is colour coded to help identify good results at a glance. Colour coding focuses on finding results that could be compatible with trading under prop firm conditions, i.e. High Profit Factor and Low Max Drawdown:</div>
+                <p>| DD < 10%   | Green Text  |</p>
+                <p>| ---------- | ----------- |</p>
+                <p>| DD 10 -15% | Yellow Text |</p>
+                <p>| DD > 15%   | Red Text    |</p>
+                <p>| PF < 1     | Red Text    |</p>
+                <p>| PF 1 - 1.5 | Yellow Text |</p>
+                <p>| PF > 1.5   | Green Text  |</p>
+                <div class="alert alert-info">If the PF is > 1.5% and Max DD < 10% both boxes background will turn green Indicating strong results</div>
+                <div class="alert alert-info">The Goal is to get both DD and PF in green</div>
+                <div class="alert alert-info"><strong>Example</strong>: BTCUSDT.p BingX H12-H1:</div>
+                <img src="images/Image (12" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info"><strong>Important Note:</strong></div>
+                <p>The system can only backtest the data available to it. As such, results may vary based on the lookback data available in your tradingview subscription</p>
+    </section>
+
+    <!-- Section: Higher Timeframe (HTF) Points of Interest (POIs) -->
+    <section id="higher-timeframe-htf-points-of-interest-pois" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Higher Timeframe (HTF) Points of Interest (POIs)</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <img src="images/Image (13" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">Select a card for descriptions below:</div>
+    </section>
+
+    <!-- Section: POI 1: HTF Order Blocks -->
+    <section id="poi-1-htf-order-blocks" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">POI 1: HTF Order Blocks</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">Order Blocks:</div>
+                <p>An Order Block is identified as the last opposite candle to print before a Market Structure Break. Ie, a bullish Order Block is the last down candle before a bullish Structure Break and a bearish Order Block is the last up candle before a bearish Structure Break </p>
+                <div class="alert alert-info">When enabled, the system will display Order Blocks associated with the selected <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/DE941EBB-4D5F-4B17-8577-8B669E670684?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#B3B005A7-F9C1-435B-BF12-84DAA278FFB1" target="_blank">Higher Timeframe (HTF) Structure</a> on lower (active) chart timeframes</div>
+                <div class="alert alert-info">*Example: Chart on the left outlines how the order block is identified (H12). Chart on the right showcases the H12 Order Block on a H1 chart*</div>
+                <img src="images/Image (14" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">OB + FVG:</div>
+                <p>When enabled, the system will only display and use HTFOrder Blocks that overlap with <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/D563A28C-BCEB-4C89-B93D-FDA7671EE7B7?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#CB257013-52FE-4932-A8C4-ADCC52D5CCB3" target="_blank">HTF Fair Value Gaps</a> as Points Of Interest </p>
+                <div class="alert alert-info">Extend Toggle:</div>
+                <p>To extend untested HTF OBs or HTFOBs + FVGs, click on the “extend” toggle next to the dropdown. </p>
+                <p>For an OB or OB+FVG to qualify for extension, HTF Market structure needs to break without price having tested the Breaker. </p>
+                <p>When this toggle is enabled, all untested HTF OBs or OB+FVGs will extend to the right until price tests it at a future date.</p>
+                <div class="alert alert-info"><strong>Invalidation Rules:</strong></div>
+                <ol class="setup-steps">
+                    <li>> <strong>OBs</strong> <strong>/ OBFVGs:</strong> Remain valid as long as the HTF Structure is in play.</li>
+                    <li>> <strong>Extensions:</strong> Remain valid until tested</li>
+                </ol>
+                <div class="alert alert-info"><strong>Exceptions:</strong></div>
+                <div class="alert alert-info">If <strong>“Use HTF Close Through to Invalidate OBs / Breakers”</strong> is toggled on, then the following rules apply:</div>
+                <ol class="setup-steps">
+                    <li>> <strong>OBs</strong> <strong>/ OBFVGs:</strong> Invalidated if price closes through them on the HTF Structure timeframe</li>
+                    <li>> <strong>Extensions:</strong> Invalidated if price closes through them on the HTF Structure timeframe <strong>OR</strong> if price tests them followed by a HTF MSB.</li>
+                </ol>
+    </section>
+
+    <!-- Section: POI 2: HTF Breaker Blocks -->
+    <section id="poi-2-htf-breaker-blocks" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">POI 2: HTF Breaker Blocks</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">Breakers:</div>
+                <p>A Breaker Block is identified as the most recent Order Block that has been breached by price, leading to an opposite Market Structure Break. For example, a bullish Breaker Block is the last bearish Order Block that price has passed through, confirming a bullish structural break, and the inverse is true for bearish Breakers</p>
+                <div class="alert alert-info">When enabled, the system will display Breakers associated with the selected <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/DE941EBB-4D5F-4B17-8577-8B669E670684?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#B3B005A7-F9C1-435B-BF12-84DAA278FFB1" target="_blank">Higher Timeframe (HTF) Structure</a> on lower (active) chart timeframes</div>
+                <div class="alert alert-info">*Example: Bearish H12 Orderblock converts to a bullish H12 Breaker on this H1 chart:*</div>
+                <img src="images/Image (15" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">Breaker + FVG:</div>
+                <p>When enabled, the system will only display and use HTF Breakers that overlap with <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/D563A28C-BCEB-4C89-B93D-FDA7671EE7B7?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#CB257013-52FE-4932-A8C4-ADCC52D5CCB3" target="_blank">HTF Fair Value Gaps</a> as Points Of Interest </p>
+                <div class="alert alert-info">Extend Toggle:</div>
+                <p>To extend untested HTF Breakers or HTF Breakers + FVGs, click on the “extend” toggle next to the dropdown. </p>
+                <p>For a Breaker or Breaker+FVG to qualify for extension, HTF Market structure needs to break without price having tested the Breaker. </p>
+                <p>When this toggle is enabled, all untested HTF Breakers or Breaker+FVGs will extend to the right until price tests it at a future date.</p>
+                <div class="alert alert-info"><strong>Invalidation Rules:</strong></div>
+                <ol class="setup-steps">
+                    <li>> <strong>Breakers</strong> <strong>/ BRKRFVGs:</strong> Remain valid as long as the HTF Structure is in play.</li>
+                    <li>> <strong>Extensions:</strong> Remain valid until tested</li>
+                </ol>
+                <div class="alert alert-info"><strong>Exceptions:</strong></div>
+                <div class="alert alert-info">If <strong>“Use HTF Close Through to Invalidate OBs / Breakers”</strong> is toggled on, then the following rules apply:</div>
+                <ol class="setup-steps">
+                    <li>> <strong>Breakers</strong> <strong>/ BRKRFVGs:</strong> Invalidated if price closes through them on the HTF Structure timeframe</li>
+                    <li>> <strong>Extensions:</strong> Invalidated if price closes through them on the HTF Structure timeframe <strong>OR</strong> if price tests them followed by a HTF MSB.</li>
+                </ol>
+    </section>
+
+    <!-- Section: POI 3: HTF Fair Value Gaps (FVGs) -->
+    <section id="poi-3-htf-fair-value-gaps-fvgs" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">POI 3: HTF Fair Value Gaps (FVGs)</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">FVG Toggle</div>
+                <p>A FVG typically forms when there is a significant price movement, creating a gap between the high of one candlestick and the low of another (or vice versa) without overlap.</p>
+                <ul class="feature-list">
+                    <li><strong>Bullish FVG</strong>: A large bullish candle followed by a second bullish candle or gap up, where the low of the third candle is higher than the high of the first candle.</li>
+                    <li><strong>Bearish FVG</strong>: A large bearish candle followed by a second bearish candle or a gap down, where the high of the third candle is lower than the low of the first candle.</li>
+                </ul>
+                <div class="alert alert-info">When enabled, the system will display FVGs associated with the selected <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/DE941EBB-4D5F-4B17-8577-8B669E670684?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#B3B005A7-F9C1-435B-BF12-84DAA278FFB1" target="_blank">Higher Timeframe (HTF) Structure</a> on lower (active) chart timeframes</div>
+                <div class="alert alert-info">*Example: Chart on the left outlines how the FVG is identified (H12). Chart on the right showcases the H12 FVG on a H1 chart*</div>
+                <img src="images/Image (16" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info"><strong>Additional</strong> <strong>Notes on FVGs:</strong></div>
+                <ol class="setup-steps">
+                    <li>> FVGs are agnostic to HTF Market Structure so if toggled on, both bullish and bearish FVGs will be displayed</li>
+                    <li>> FVGs <strong>will not</strong> display if with OBFVGs or BRFVGs are enabled in POI 1 or POI 2</li>
+                </ol>
+                <div class="alert alert-info">FVG Extension Toggle:</div>
+                <p>To extend untested HTF FVGs, click on the “extend” toggle next to it. For a FVG to qualify for extension, HTF Market structure needs to break without price having tested the FVG. When this toggle is enabled, all untested HTF FVGs will extend to the right until 100% filled at a future date.</p>
+                <div class="alert alert-info"><strong>Invalidation Rules:</strong></div>
+                <div class="alert alert-info">All FVGs and Extensions remain valid until HTF Price Closes through them.</div>
+    </section>
+
+    <!-- Section: POI 4: HTF Internal Pivots (Display Only) -->
+    <section id="poi-4-htf-internal-pivots-display-only" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">POI 4: HTF Internal Pivots (Display Only)</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">To enable the display of HTF Internal Liquidity levels on the active chart timeframe, enable the Liquidity Levels Toggle under ‘POI 4’.</div>
+                <div class="alert alert-info">When enabled, the system will display all UNTESTED HTF pivots formed within an active range. Lines will stop extending once they are either tested or HTF Market Structure Breaks</div>
+                <div class="alert alert-info">Example of H12 untested pivots within an active H12 Structural Range on a H1 Chart:</div>
+                <img src="images/Image (17" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+    </section>
+
+    <!-- Section: HTF Close to Invalidate POIs -->
+    <section id="htf-close-to-invalidate-pois" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">HTF Close to Invalidate POIs</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <p>All OBs, OB+FVGs, Breakers and Breaker+FVGs remain valid as long as the HTF range remains valid. UNLESS “Use HTF Close Through to Invalidate OBs / BRKRs” is enabled in settings.</p>
+                <div class="alert alert-info">When this toggles is enabled, the system will apply the same invalidation criteria as it does for FVGs, i.e they will be considered invalidated if if HTF price closes through them, regardless of the HTF Structural range</div>
+    </section>
+
+    <!-- Section: Trade Setups -->
+    <section id="trade-setups" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Trade Setups</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">Settings to enable points of interest for HTF-LTF trade setups are detailed below:</div>
+    </section>
+
+    <!-- Section: HTF-LTF Trade Setups at HTF POIs -->
+    <section id="htf-ltf-trade-setups-at-htf-pois" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">HTF-LTF Trade Setups at HTF POIs</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <img src="images/Image (18" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">This section of settings is where potential HTF-LTF trade setups at HTF POIs and early warning alerts are configured:</div>
+    </section>
+
+    <!-- Section: Range Extremes & Old Untested -->
+    <section id="range-extremes-and-old-untested" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Range Extremes & Old Untested</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">There are three types of alerts at Range Extremes:</div>
+                <ol class="setup-steps">
+                    <li>> Market Structure Breaks</li>
+                    <li>> HTF Swing Failure Patterns (SFPs)</li>
+                    <li>> HTF-LTF Setups</li>
+                </ol>
+                <hr class="my-4">
+                <div class="alert alert-info">#### Market Structure Breaks:</div>
+                <p>When HTF price closes through a <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/DE941EBB-4D5F-4B17-8577-8B669E670684?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#D7972C3E-A29B-498E-88A7-92BC0544E74C" target="_blank">range extreme</a>, an alert will trigger confirming a Market Structure Break. This is hard coded into the indicator and as long as “ALL” alerts are enabled, this will fire for all indicator tiers.</p>
+                <hr class="my-4">
+                <div class="alert alert-info">HTF Swing Failure Patterns (SFPs)</div>
+                <img src="images/Image (19" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">When enabled and HTF price fails to closes through a range extreme, an alert will trigger and label will print confirming a HTF SFP.</div>
+                <img src="images/Image (20" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info">#### Potential HTF - LTF Setups:</div>
+                <img src="images/Image (21" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">When enabled, a potential trade setup label and alert will generate when a HTF SFP is generated at a Range Extreme followed by a Chart Timeframe (LTF) MSB or MSS. *These signals are agnostic to current Market Structure bias and will generate at both extremes*</div>
+                <img src="images/Image (22" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info">Old Untested Highs and Lows</div>
+                <p>When enabled, old untested HTF highs and lows that are outside the current range will be used for SFP and Setup alerts as described above</p>
+    </section>
+
+    <!-- Section: HTF-LTF Setups at Liquidity -->
+    <section id="htf-ltf-setups-at-liquidity" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">HTF-LTF Setups at Liquidity</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">This setting enables trade setup alerts at internal liquidity levels (HTF pivots within a Structural Range.</div>
+                <div class="alert alert-info"><strong>Trade Setup Criteria:</strong> A trade setup will generate when a <strong>HTF SFP</strong> is generated at an internal HTF Pivot / <strong>Liquidity</strong> <strong>Level</strong> followed by a <strong>Chart</strong> <strong>Timeframe</strong> <strong>( LTF)</strong> <strong>Structure Break</strong></div>
+                <div class="alert alert-info">Options:</div>
+                <ol class="setup-steps">
+                    <li>> At POIs</li>
+                    <li>> ALL</li>
+                    <li>> ALL - With Structure</li>
+                </ol>
+                <hr class="my-4">
+                <div class="alert alert-info">#### At POIs</div>
+                <p>When enabled and the Trade Setup Criteria is met, the system will only display setups at <strong>enabled</strong> <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/2063CB73-9B07-4401-A7F2-1B8F1E190A25?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#D563A28C-BCEB-4C89-B93D-FDA7671EE7B7" target="_blank">HTF POIs</a> (OBs/Breakers/FVGs) and in line with the <strong>direction</strong> <strong>of the POI</strong>. </p>
+                <div class="alert alert-info">OBs and Breakers will always be in line with the direction of HTF Structure, but FVGs can print counter trend (Bearish FVG inside Bullish Structure and vice versa)</div>
+                <div class="alert alert-info">*Example: At POIs and HTF OBs enabled (H12-H1):*</div>
+                <img src="images/Image (23" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info"><strong>ALL</strong> (With Trend and Counter Trend):</div>
+                <p>When enabled and the Trade Setup Criteria is met, the system will display ALL setups - both with HTF trend and counter-trend (Bullish <strong>AND</strong> Bearish) <strong>regardless of HTF structure and enabled POIs</strong>. </p>
+                <div class="alert alert-info">Ie. Any HTF-LTF setup at internal liquidity levels:</div>
+                <img src="images/Image (24" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info">#### ALL - With Structure</div>
+                <div class="alert alert-info">When enabled and trade setup criteria is met, the system will only display setups in line with the HTF structure/trend (Bullish <strong>OR</strong> Bearish) - <strong>regardless of enabled HTF POIs.</strong></div>
+                <img src="images/Image (25" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info">HTF SFPs at Liquidity (Toggle)</div>
+                <p>Enabling this will display Alerts and Lebels for SFPs at internal liquidity levels per your selection on setups. </p>
+                <p>ie. If you selected "ALL", then SFPs will print on all internal HTF pivots. If you selected "With Structure", then only SFPs on internal pivots with structure will print. If you selected "At POIs" then only SFPs inside enabled POIs will activate</p>
+    </section>
+
+    <!-- Section: HTF-LTF Early Warning Systems -->
+    <section id="htf-ltf-early-warning-systems" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">HTF-LTF Early Warning Systems</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">The IMG Pro indicator has an early warning system that will generate a potential setup alert before a HTF SFP is confirmed</div>
+                <div class="alert alert-info">There are two types of early warnings:</div>
+                <ol class="setup-steps">
+                    <li>> LTF Structure Break</li>
+                    <li>> LTF FVG</li>
+                </ol>
+                <hr class="my-4">
+                <div class="alert alert-info">LTF Structure Break</div>
+                <p>If enabled, the system will generate a potential setup alert if price cuts through a HTF level (Range Extreme / Internal Liquidity) and prints an opposite LTF MSB back through that level. This is a more aggressive approach where the system does not wait for the HTF SFP to be confirmed.</p>
+                <div class="alert alert-info">*Example: In the screenshot below, the system did not wait for a H12 SFP to be confirmed, allowing it to signal an entry that would have otherwise been missed if the LTF Structure Break early warning system was not enabled*</div>
+                <img src="images/Image (26" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info">LTF FVG</div>
+                <p>If enabled, the system will generate a potential setup alert if price cuts through a HTF level (Range Extreme / Internal Liquidity) and prints an opposite LTF FVG back through that level. No LTF MSB is required and a limit order at the FVG is signalled. This is a more aggressive approach where the system does not wait for the HTF SFP to be confirmed.</p>
+                <div class="alert alert-info">*Example: In the screenshot below, the system did not wait for a H12 SFP to be confirmed, signalling an entry as soon as an opposite LTF FVG is confirmed pushing price back through the HTF Liquidity Levels*</div>
+                <img src="images/Image (27" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+    </section>
+
+    <!-- Section: LTF -LTF Trade Setups at HTF POIs -->
+    <section id="ltf--ltf-trade-setups-at-htf-pois" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">LTF -LTF Trade Setups at HTF POIs</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <img src="images/Image (28" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">This section of settings is where potential LTF-LTF trade setups at HTF POIs:</div>
+                <div class="alert alert-info">LTF-LTF Trades can be setup inside two types of HTF POIs:</div>
+                <ol class="setup-steps">
+                    <li>> HTF POIs </li>
+                    <li>> Confirmed HTF-LTF Signals</li>
+                </ol>
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> HTF POIs:</li>
+                </ol>
+                <p>If enabled, a potential trade setup label will generate when a <strong>LTF SFP</strong> is generated inside an enabled <strong>HTF POI (OBs/Breakers/FVGs)</strong> followed by a <strong>LTF Structure Break</strong></p>
+                <img src="images/Image (29" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> Confirmed HTF-LTF Signals</li>
+                </ol>
+                <p>If enabled, a potential trade setup label will generate when a <strong>LTF SFP</strong> is generated <strong>inside</strong> <strong>a confirmed HTF-LTF setup</strong> followed by a <strong>LTF Structure Break</strong></p>
+                <img src="images/Image (30" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info"><strong>Additional Notes:</strong></div>
+                <ol class="setup-steps">
+                    <li>> The first LTF-LTF signal in this type of setup will only generate inside a HTF-LTF setup</li>
+                    <li>> The HTF-LTF signal can be valid or invalid (due to invalidation rules) and will be used for LTF-LTF setups as long as price has not breached its stoploss level</li>
+                    <li>> Once the first LTF-LTF signal is generated, subsequent signals will be generated inside valid LTF-LTF signals</li>
+                </ol>
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> LTF SFP Toggle</li>
+                </ol>
+                <p>When enabled:</p>
+                <ol class="setup-steps">
+                    <li>SFPs generated on the Chart Timeframe SFP at enabled HTF POIs will display on screen</li>
+                    <li>Tradingview Alerts will be activated to send you alerts when a LTF SFP at a HTF POI is confirmed</li>
+                </ol>
+    </section>
+
+    <!-- Section: Trade Entries and Exits -->
+    <section id="trade-entries-and-exits" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Trade Entries and Exits</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+    </section>
+
+    <!-- Section: Trade Entries -->
+    <section id="trade-entries" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Trade Entries</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">This section in indicator settings is where trade entries are configured:</div>
+                <img src="images/Image (31" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+    </section>
+
+    <!-- Section: LTF Break Type -->
+    <section id="ltf-break-type" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">LTF Break Type</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">LTF Structure Break Type defines the type of lower timeframe structure break to use after HTF criteria are met</div>
+                <p>Depending on your appetite for aggression, there are six types of LTF structure breaks that can be used to identify potential trade setups:</p>
+                <ol class="setup-steps">
+                    <li>> MSB: Market Structure Break</li>
+                    <li>> MSS: Market Structure Shift</li>
+                    <li>> CP: Closest Opposite Pivot </li>
+                    <li>> Breaker: High / Low </li>
+                    <li>> Breaker: Close </li>
+                    <li>> First: Breaker or MSS </li>
+                </ol>
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> MSB: Market Structure Break:</li>
+                </ol>
+                <p>When selected, the system will use the first opposite pivot (in the current chart timeframe) to the <strong>left</strong> of a confirmed SFP to calculate a break in market structure when price closes through it:</p>
+                <img src="images/Image (32" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> MSS: Market Structure Shift:</li>
+                </ol>
+                <p>When selected, the system will use the first opposite pivot (in the current chart timeframe) to the <strong>left</strong> <strong>OR right</strong> of a confirmed SFP to calculate a break in market structure when price closes through it.</p>
+                <p>MSS’ are more sensitive and may provide more false signals but are useful when there are big spike liquidity runs</p>
+                <img src="images/Image (33" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> CP: Closest Opposite Pivot:</li>
+                </ol>
+                <p>Similar to but more aggressive than MSS, the system will use the closest unbroken opposite pivot after a SFP or potential SFP to calculate a break in structure. </p>
+                <img src="images/Image (34" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> Breaker: High/Low</li>
+                </ol>
+                <p>Similar to but more aggressive than MSS, the system will use the closest unbroken opposite pivot after a SFP or potential SFP to calculate a break in structure. </p>
+                <img src="images/Image (35" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <ol class="setup-steps">
+                    <li>> Breaker: Close</li>
+                </ol>
+                <p>This is the same as Breaker high/low but using the breaker's close price instead of high/low. Slightly more aggressive</p>
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> First: Breaker or MSS</li>
+                </ol>
+                <p>The system will use whichever comes first between <strong>MSS</strong> and <strong>Breaker:High/Low</strong></p>
+    </section>
+
+    <!-- Section: Do not Require SFP -->
+    <section id="do-not-require-sfp" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Do not Require SFP</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">The system will ignore the requirement of a HTF SFP and print a signal after taking out a HTF level followed y a LTF Structure Break regardless of whether it is above or below the HTF level.</div>
+                <div class="alert alert-info">This also applies to LTF-LTF setups. if price breaks below a low and then breaks back above the high that broke the low, that will count as a setup.</div>
+    </section>
+
+    <!-- Section: LTF Entry Mode & Require FVG -->
+    <section id="ltf-entry-mode-and-require-fvg" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">LTF Entry Mode & Require FVG</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <p>There are four types of LTF position entry modes available. The selected mode will determine where the indicator will place a limit entry and calculate <strong>position size</strong> when a <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/864F64D8-CE95-4873-8A09-FBCE30C36A56?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#954025ED-C452-4330-AB60-70FC50C26126" target="_blank">valid setup</a> is confirmed.</p>
+                <ol class="setup-steps">
+                    <li>> MSB Level </li>
+                    <li>> Market Entry on Signal</li>
+                    <li>> Breaker</li>
+                    <li>> OB</li>
+                </ol>
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> MSB Level</li>
+                </ol>
+                <p>When selected, a trade signal and label will appear with a limit order to be placed at the point price created the <strong>enabled</strong> <a href="https://docs.craft.do/editor/d/f8d1c697-e6b5-e01a-db6c-c7d3511180cd/37F08454-B68C-4C1E-9936-9107989EFB02/b/864F64D8-CE95-4873-8A09-FBCE30C36A56?s=ZBNwVdhhTRxfLuq7mtLHq4fY3HPqRc9EsvHwrzZBrzR5#954025ED-C452-4330-AB60-70FC50C26126" target="_blank">LTF Structure Break level.</a> </p>
+                <p>The signal box will cover the total trade risk (The MSB Level to Stoploss) making trades easy to spot and manage.</p>
+                <p>A triangle will also be displayed at the edge of the box in the direction of the trade. You can hover over it with your mouse to reveal relevant trade details including entry / stop / trade risk and position size.</p>
+                <img src="images/Image (36" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> Market Entry on Signal </li>
+                </ol>
+                <p>When selected, a trade signal and label will appear as soon as the signal is confirmed instructing you to enter at market</p>
+                <p>The signal box will cover the total trade risk (The Market Entry Level to Stoploss) making trades easy to spot and manage.</p>
+                <p>A triangle will also be displayed at the edge of the box in the direction of the trade. You can hover over it with your mouse to reveal relevant trade details including entry / stop / trade risk and position size.</p>
+                <img src="images/Image (37" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> Breaker</li>
+                </ol>
+                <p>When selected, a trade signal and label will appear with a limit order to be placed at the LTF Breaker.</p>
+                <p>The signal box will cover the total trade risk (Breaker Entry Level to Stoploss) making trades easy to spot and manage.</p>
+                <p>A triangle will also be displayed at the edge of the box in the direction of the trade. You can hover over it with your mouse to reveal relevant trade details including entry / stop / trade risk and position size.</p>
+                <img src="images/Image (38" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> OB</li>
+                </ol>
+                <p>When selected, a trade signal and label will appear with a limit order to be placed at the LTF Order Block.</p>
+                <p>The signal box will cover the total trade risk (OB Entry Level to Stoploss) making trades easy to spot and manage.</p>
+                <p>A triangle will also be displayed at the edge of the box in the direction of the trade. You can hover over it with your mouse to reveal relevant trade details including entry / stop / trade risk and position size.</p>
+                <img src="images/Image (39" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <ol class="setup-steps">
+                    <li>> Require FVG (Toggle)</li>
+                </ol>
+                <p>When enabled, a LTF FVG is required inside a setup for it to be confirmed. The LTF FVG can be bullish OR bearish regardless of the direction of the signal. </p>
+                <img src="images/Image (40" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+    </section>
+
+    <!-- Section: Max Trade Risk and Premium/Discount -->
+    <section id="max-trade-risk-and-premium-discount" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Max Trade Risk and Premium/Discount</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">Max Trade Risk:</div>
+                <p>When enabled, the system will only consider a setup valid as long as the distance between the entry mode and stoploss is within the Max Trade Risk parameters.</p>
+                <p><strong>Example:</strong></p>
+                <ol class="setup-steps">
+                    <li>Confirmed HTF SFP</li>
+                    <li>Confirmed LTF MSB</li>
+                    <li>Entry Mode: MSB Level</li>
+                    <li>Max Trade Risk enabled to 1%</li>
+                </ol>
+                <p>In this example, the system will only treat a setup as valid IF the price difference between the LTF MSB Level and SFP Swing low is less than or equal to 1%. In the chart example below, the system treated this setup as invalid as the price variance between the <strong>MSB Level</strong> and <strong>SFP</strong> <strong>Low</strong> <strong>( stoploss)</strong> was 1.33%.</p>
+                <img src="images/Image (41" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <p>*Invalid setups will still display on the chart with a reason for invalidation (see: grey box in screenshot)*</p>
+                <hr class="my-4">
+                <div class="alert alert-info">Premium / Discount:</div>
+                <p>The system can be setup to only display signals that are in the top or bottom n% of the HTF Market Structure Range</p>
+                <p>A value of 0 (default) will disable the premium/discount system and utilise the entire range for all signal types (bullish and bearish)</p>
+                <p>To enable the premium / discount system, enter a % value between 0 - 50:</p>
+                <p><strong>Examples:</strong></p>
+                <p>A value of 50% will only display bullish signals that have, at minimum, tagged the bottom half of the range and vice versa for bearish signals.</p>
+                <p>A value of 25% will only display bullish signals that have tagged the bottom quarter of the range and vice versa.</p>
+                <p>A value of 38.2% will display signals that tag the top and bottom 38.2% of the range (equivalent of the 61.8% OTE. retracement) Etc.</p>
+                <p>*<strong>Range activation with 25 % premium /discount enabled:</strong>*</p>
+                <img src="images/Image (42" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <p>*<strong>Range activation with 38.2 % premium /discount enabled:</strong>*</p>
+                <img src="images/Image (43" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">#### INVALIDATION LABELS</div>
+                <div class="alert alert-info">When a setup is out of bounds based on these settings, a grey label will appear with details of why the signal is invalid (outside premium/discount levels)</div>
+                <img src="images/Image (44" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">Max Open Longs / Shorts: Enter the maximum allowable concurrent open Longs and Shorts</div>
+    </section>
+
+    <!-- Section: Trade Exits -->
+    <section id="trade-exits" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Trade Exits</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">This section in indicator settings is where trade entries are configured:</div>
+                <img src="images/Image (45" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">Partial Exits:</div>
+                <p>Three partial exits at fixed R:R points can be setup. Enter the percentage exit of each partial in the boxes to the left and at what R:R in the boxes to the right. </p>
+                <div class="alert alert-info">Partials can be used with other exit types listed below or stand alone:</div>
+                <p>If being used as stand alone, then the total percentage of the partials needs to add up to 100%.</p>
+                <p>If being used in conjunction with another exit type (Range Extremes / HTF POIs / Opposite Signals), then the total does not need to add up to 100%.</p>
+                <p>EXAMPLE: If set to 25% exit at 1R, 50% exit at 3R and “Exit at Valid Opposite Signal” is enabled:</p>
+                <p>If TP1 and 2 are hit, then the system will exit the balance on a valid opposite signal or Stoploss.</p>
+                <p>If TP1 is hit and an opposite signal prints before TP2, the <strong>entire balance will exit</strong> (the system will ignore TP2)</p>
+                <p>if no TP is hit and a valid opposite signal prints, <strong>the entire position will be closed.</strong></p>
+                <hr class="my-4">
+                <div class="alert alert-info">Exit on Opposite Signals</div>
+                <p>Can be used as stand alone exits or in conjunction with Partials as detailed above</p>
+                <p><strong>Options</strong>:</p>
+                <ol class="setup-steps">
+                    <li><strong>Any Opposite Signal:</strong> The system will exit as soon as any opposite signal prints based on the settings applied. This includes valid and invalid signals. For EXAMPLE, an invalid signals could be an opposite signal without a FVG when “Require FVG in Signal” is enabled</li>
+                    <li><strong>Valid Opposite Signals:</strong> The system will only exit once a valid opposite signal is confirmed. Using the same example above, it will only exit when an opposite signal with a FVG prints.</li>
+                </ol>
+                <hr class="my-4">
+                <div class="alert alert-info">Exit at Untested HTF POI</div>
+                <p>Can be used as stand alone exits or in conjunction with Partials as detailed above</p>
+                <p><strong>Options</strong>:</p>
+                <ol class="setup-steps">
+                    <li><strong>Range Extremes</strong>: The position will exit at untested Range Extremes. If the Range Extreme is tested, then it will exit at the highest high or Lowest Low beyond the extreme of a valid range</li>
+                    <li><strong>Closest Untested HTF POI:</strong> When enabled, the system will signal a trade exit when price comes into either:</li>
+                    <li>An untested HTF POI (Breaker/OB/FVG). This will be based on the POIs enabled in the "HTF Points of Interest (POIs)" settings above, OR</li>
+                    <li>An untested Range Extreme. If the Range Extreme is tested, then it will exit at the highest high or Lowest Low beyond the extreme of a valid range</li>
+                </ol>
+    </section>
+
+    <!-- Section: Unentered Trade Invalidations -->
+    <section id="unentered-trade-invalidations" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Unentered Trade Invalidations</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <img src="images/Image (46" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">This section controls unentered trade invalidation rules.</div>
+                <hr class="my-4">
+                <div class="alert alert-info">Opposite HTF SFP before entry:</div>
+                <p>When enabled, any pending limit orders will be cancelled if an opposite HTF SFP is confirmed before entry. In the chart example below, the Long setup limit entry was cancelled as an opposite HTF SFP was confirmed before entry.</p>
+                <img src="images/Image (47" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info">Confirmed Opposite Setup:</div>
+                <p>When enabled, pending limit orders will be cancelled if an opposite signal is confirmed before entry. In the example below, the short signal was invalidated as a bullish signal was confirmed before entry.</p>
+                <img src="images/Image (48" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info">HTF MS Break:</div>
+                <p>When enabled, pending limit orders will be cancelled if a HTF MS Break occurs. If disabled, limit orders will remain regardless of HTF Structure Breaks. Important to note that there will be a lot of older unentered limit orders kept pending if this is disabled.  </p>
+                <hr class="my-4">
+                <div class="alert alert-info">Signal Pivot Outside MS:</div>
+                <p>When enabled, signals will be invalidated if their LTF MSB level is outside the current HTF Structural Range.</p>
+    </section>
+
+    <!-- Section: Risk Management -->
+    <section id="risk-management" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Risk Management</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <img src="images/Image (49" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">Input details required for the system to calculate position sizing here. <strong>Our proprietary system includes fees in position sizing calculations</strong> so actual risk is never greater than maximum allowable risk per trade</div>
+                <p>| <strong>Capital:</strong>                                               | Enter your current trading capital here                                                                                                                                                                                                                                                                                                                                                                    |</p>
+                <p>| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |</p>
+                <p>| <strong>Lot Size:</strong>                                              | Enter Lot Size to display label/alert position size in lots                                                                                                                                                                                                                                                                                                                                                |</p>
+                <p>| <strong>Risk</strong> <strong>Calculation</strong> <strong>Type</strong>                          | Select whether you want to use a percentage of your capital or a fixed ‘dollar’ amount to risk per trade                                                                                                                                                                                                                                                                                                   |</p>
+                <p>| <strong>Max</strong> <strong>Risk Per Trade</strong>                                 | Enter the maximum percentage of your capital or fixed ‘dollar’ amount to risk per trade                                                                                                                                                                                                                                                                                                                    |</p>
+                <p>| <strong>Maker</strong> <strong>Fee Per Trade(%):</strong>                            | Input the maker fee per trade provided to you from your exchange. This will be used in position sizing calculations                                                                                                                                                                                                                                                                                        |</p>
+                <p>| <strong>Taker</strong> <strong>Fee Per Trade(%):</strong>                            | Input the taker fee per trade provided to you from your exchange. This will be used to calculate fees on market orders (Stoplosses / Some Exits / Some Entries)                                                                                                                                                                                                                                            |</p>
+                <p>| <strong>Stop</strong> <strong>Loss Ticks:</strong>                                   | Enter number of ticks stoploss should be placed away from SFP extremes. A Tick is the smallest denomination an instrument can trade.                                                                                                                                                                                                                                                                       |</p>
+                <p>| <strong>Max</strong> <strong>Leverage:</strong>                                      | Enter the leverage you wish to apply on your capital. Position sizing will always be based on your max risk per trade settings but using leverage on lower timeframes will give you larger position sizes while keeping true to your risk appetite                                                                                                                                                         |</p>
+                <p>| <strong>Use Taker Fees for Pos Size & TPs:</strong>                     | Uses TAKER Fees for all exits in position size calculations. Useful on low timeframes where position sizing can be huge with leverage. If you get stopped with a large position size, the fees of the stop could end up being greater than the set max risk per trade By enabling this feature, your position size will be reduced, but even if stopped, max loss wont exceed your set max risk parameters |</p>
+                <p>| <strong>Use</strong> <strong>Portfolio</strong> Value for <strong>Ri</strong>s<strong>k C</strong>alculations: | Enable to use the portfolio value (Current Capital + Value of Open Positions) for position size calculations. Disable to use Available Capital for Position Size Calculations (Current Capital - Margin Used for Open Positions)                                                                                                                                                                           |</p>
+                <p>| <strong>Set Stoploss to Entry at R:R:</strong>                          | Enter R value for a position to achieve before moving a position’s stoploss to its entry point                                                                                                                                                                                                                                                                                                             |</p>
+                <p>| <strong>Use Breaker for Stoploss</strong>                               | Use the breaker extreme as your stoploss level instead of the SFP extreme                                                                                                                                                                                                                                                                                                                                  |</p>
+    </section>
+
+    <!-- Section: Trading Sessions -->
+    <section id="trading-sessions" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Trading Sessions</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <img src="images/Image (50" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">Use this section to setup custom trading days and intraday trading sessions</div>
+                <p>| <strong>Trade</strong> <strong>on Specified Days:</strong>       | Specify which days to activate trading on the indicator. Numeric values are assigned to each day: <br/>1 = Sunday <br/>2 = Monday<br/>3 = Tuesday etc  |</p>
+                <p>| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |</p>
+                <p>| <strong>Session</strong> <strong>1</strong>                      | Enter a custom intraday session start and end time and toggle on to enable it. When enabled, trades will only be taken between the start and end times |</p>
+                <p>| <strong>Session</strong> <strong>2</strong>                      | Enter a custom intraday session start and end time and toggle on to enable it. When enabled, trades will only be taken between the start and end times |</p>
+                <p>| <strong>Session</strong> <strong>Timezone</strong>               | Select your preferred timezone for the session timings entered above. Default is UTC.                                                                  |</p>
+                <p>| <strong>Auto Close Position at Session End</strong> | Enable to automatically close any positions at the end of each enabled session                                                                         |</p>
+    </section>
+
+    <!-- Section: Market Vs Limit Order Conditions -->
+    <section id="market-vs-limit-order-conditions" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Market Vs Limit Order Conditions</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">When a setup is confirmed, the system will either tell you where to put a limit order or if you should consider entering at market</div>
+                <div class="alert alert-info">Limit Order Conditions:</div>
+                <p>If price closes outside your entry mode on a trade setup confirmation, the system will alert you to place a Limit Order at your entry mode extreme</p>
+                <div class="alert alert-info"><strong>Example</strong> :</div>
+                <div class="alert alert-info">Bullish HTF SFP confirmed</div>
+                <div class="alert alert-info">Bullish LTF MSB confirmed</div>
+                <div class="alert alert-info">Entry Mode Breaker enabled</div>
+                <div class="alert alert-info">HTF Price closes above the LTF Breaker</div>
+                <p>A trade setup alert will be generated to place a <strong>Limit Order</strong> at the LFT Breaker and the shaded green trade risk box will be displayed from the LTF Breaker High to the SFP low (Stoploss Level). The Green Box signifies the total trade risk of the setup.</p>
+                <img src="images/Image (51" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <hr class="my-4">
+                <div class="alert alert-info">Market Order Conditions:</div>
+                <p>If price closes Inside your entry mode on a trade setup confirmation, the system will alert you to place a <strong>Market</strong> <strong>Order</strong></p>
+                <div class="alert alert-info"><strong>Example</strong> :</div>
+                <div class="alert alert-info">Bearish HTF SFP confirmed</div>
+                <div class="alert alert-info">Bearish LTF MSB confirmed</div>
+                <div class="alert alert-info">Entry Mode MSB Point enabled</div>
+                <div class="alert alert-info">HTF Price closes between the MSB point and SFP Extreme</div>
+                <p>A trade setup alert will be generated to place a <strong>Market</strong> <strong>Order</strong> and the shaded red trade risk box will be displayed from the point of market entry to the SFP low (Stoploss Level). The Red Box signifies the total trade risk of the setup.</p>
+                <img src="images/Image (52" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+    </section>
+
+    <!-- Section: Tradingview Alerts, Indicator Labels and Study Errors -->
+    <section id="tradingview-alerts-indicator-labels-and-study-errors" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Tradingview Alerts, Indicator Labels and Study Errors</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+    </section>
+
+    <!-- Section: Setting Up Tradingview Alerts -->
+    <section id="setting-up-tradingview-alerts" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Setting Up Tradingview Alerts</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <p>If Tradingview Alerts are enabled, the indicator will fire an alert based on your settings. </p>
+                <p>IE: if a label prints on screen, you will be prompted with a Tradingview Alert <strong>unless Alerts:</strong> <strong>‘Valid Signals’ is selected in Basic Settings</strong> in which case only valid trade signal alerts will be generated.</p>
+                <p>To enable alerts, <strong>once</strong> <strong>you</strong> <strong>have</strong> <strong>finalized</strong> <strong>the</strong> <strong>settings</strong> <strong>you</strong> <strong>want</strong> :</p>
+                <ol class="setup-steps">
+                    <li>> Right click on the indicator and select “Add Alert on IMG…”</li>
+                </ol>
+                <img src="images/Image (53" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <ol class="setup-steps">
+                    <li>> Customise the alert name in the message tab of the alerts pane</li>
+                </ol>
+                <img src="images/Image (54" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <ol class="setup-steps">
+                    <li>> Click on "Create" </li>
+                </ol>
+                <img src="images/Image (55" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">Note: If you change your settings AFTER setting up alerts, you will need to delete the previous alert and follow these steps again</div>
+    </section>
+
+    <!-- Section: Indicator Labels -->
+    <section id="indicator-labels" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Indicator Labels</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <div class="alert alert-info">The indicator will print <strong>triangles, circles and squares</strong> as labels on the chart based on your settings. Label details are revealed when the cursor is placed above them</div>
+                <img src="images/Image (56" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">The only label that does not require a cursor is SFPs. These are displayed directly above or below the SFP extreme</div>
+                <div class="alert alert-info">To ensure labels display correctly, the indicator will need to be brought to front in "visual order" on your tradingview chart:</div>
+                <img src="images/Image (57" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">List of IMG Label Types ( Circles, Triangles and Squares):</div>
+                <ol class="setup-steps">
+                    <li>SFPs</li>
+                    <li>Trade Signals - *Green or Red Triangles*</li>
+                    <li>Trade Entries - *Circles*</li>
+                    <li>Trade Invalidations (Cancellation of unentered trades, or Invalid Trade Signals due to custom exit criteria) - *Grey Triangles*</li>
+                    <li>Stop-losses - *Grey Squares*</li>
+                    <li>Take Profits - *Green or Red Squares*</li>
+                </ol>
+    </section>
+
+    <!-- Section: Study Errors -->
+    <section id="study-errors" class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">Study Errors</h2>
+        </div>
+
+        <div class="card content-card">
+            <div class="card-body">
+                <p>A study error (red exclamation mark) may display next to the indicator name on the top left corner of your screen. Error details can be revealed by clicking on the red exclamation mark</p>
+                <div class="alert alert-info">Study Error 1: The Market Structure Timeframe must be divisible by the active chart timeframe</div>
+                <img src="images/Image (58" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <div class="alert alert-info">To fix this error, ensure the timeframe selected in the Higher Timeframe (HTF) Structure is divisible by the active chart timeframe</div>
+                <div class="alert alert-info">Study Error 2: Timeout</div>
+                <img src="images/Image (59" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <p>At times, you may encounter a timeout study error. This issue can arise from the system's intricate functionalities, particularly when numerous features are enabled concurrently, causing the system to approach the memory allocation limits permitted by TradingView..</p>
+                <p>If you see this error, you can:</p>
+                <div class="alert alert-info">Reduce the number of applied settings</div>
+                <div class="alert alert-info">Quickly switch the chart timeframe to something else and back to refresh the screen, or Refresh your browser, however this does not seem to be as effective as the timeframe switch, or</div>
+                <div class="alert alert-info">Remove the indicator and add back to the chart</div>
+                <div class="alert alert-info"># VWAP: Trend Filter</div>
+                <div class="alert alert-info">Avialable to Pro Users</div>
+                <div class="alert alert-info">This indicator aims to identify the underlying market sentiment using various VWAP anchor points. The system operates with two primary anchor periods:</div>
+                <div class="alert alert-info">Short Period: Default is set to one day.</div>
+                <div class="alert alert-info">Long Period: Default is set to one week.</div>
+                <div class="alert alert-info">For each of these periods, the following VWAP levels are displayed:</div>
+                <div class="alert alert-info">Current session VWAP</div>
+                <div class="alert alert-info">Previous session VWAP</div>
+                <div class="alert alert-info">Previous session's highest high VWAP</div>
+                <div class="alert alert-info">Previous session's lowest low VWAP</div>
+                <div class="alert alert-info">By default, the system displays a total of eight levels (four for each period), but these can be customised in the settings.</div>
+                <p>Sentiment is visually represented with bullish or bearish colours, depending on whether the price closes above or below these levels. Once the two anchor periods are set the displayed levels remain static across all timeframes, so if you prefer looking for multiple confirmations on lower timeframes the levels will remain the same whether you're on the H1 or the M5 </p>
+                <div class="alert alert-info">Additionally, the system offers the option to display anchored Simple Moving Averages (SMAs) instead of VWAP for instruments without volume data (e.g., DXY). (edited)</div>
+                <hr class="my-4">
+                <p><strong>HOW TO USE:</strong> There are multiple ways you can use this system - here are two simple techniques: </p>
+                <ol class="setup-steps">
+                    <li>> As a Filter for IMG PRO Signals:</li>
+                </ol>
+                <p> Use the trend filter to align your trades with the prevailing market trend. For example:</p>
+                <ul class="feature-list">
+                    <li>Avoid taking long positions when there is significant supply overhead.</li>
+                    <li>Similarly, avoid short positions if there is strong demand below the price.</li>
+                </ul>
+                <img src="images/Image (60" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <p><a href="https://www.tradingview.com/x/ll8wpxxj/" target="_blank">BINGX:BTCUSDT.P Chart Image by IMGPro</a></p>
+                <ol class="setup-steps">
+                    <li>> As a Stand-Alone System:</li>
+                    <li><strong>Bullish:</strong> Wait for the price to come into green bands, sweep some lows, and produce a bullish break structure. If the resulting order block (OB) or breaker aligns with the green bands, place limit orders; alternatively, enter at market if you prefer a more aggressive approach.,</li>
+                    <li><strong>Bearish:</strong> Wait for the price to come into red bands, sweep some highs, and produce a bearish break in structure. If the OB or breaker coincides with the red bands, place limit orders, or enter at market if acting aggressively.,</li>
+                    <li>Use the short-term anchors for precise entry points and the long-term anchors to determine the broader trend and identify key points of interest for execution. Avoid countertrend trades (e.g., no shorts if the long-term anchors are green, and no longs if the long-term anchors are red).</li>
+                </ol>
+                <img src="images/Image (61" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <p><a href="https://www.tradingview.com/x/2I6X6gkN/" target="_blank">https://www.tradingview.com/x/2I6X6gkN/</a></p>
+                <div class="alert alert-info">Notes:</div>
+                <p>When to ignore these rules: </p>
+                <p>Old High / Low taken and signal prints - you will have a lot of supply overhead or demand below. Worth taking a punt to catch the absolute high/low. For additional confluence look for divergences with these IMG signals. </p>
+                <hr class="my-4">
+                <div class="alert alert-info">Additional Notes:</div>
+                <ol class="setup-steps">
+                    <li>Look for OBs that align with the bands in the direction you’re looking to trade as potential knife catch entry points</li>
+                </ol>
+                <img src="images/Image (62" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <p><a href="https://www.tradingview.com/x/nas7XpN4/" target="_blank">BINGX:BTCUSDT.P Chart Image by IMGPro</a></p>
+                <ol class="setup-steps">
+                    <li>Once a trend is established, wait to price to come back into the bands an print a setup (Sweep / BOS) and enter at breaker or OB that overlaps with the bands</li>
+                </ol>
+                <img src="images/Screenshot_2024-10-17_at_15.12.30.png" alt="Screenshot_2024-10-17_at_15.12.30.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">
+                <ol class="setup-steps">
+                    <li>If you see something like this - price rallies, ranges/distributes over the weekend and starts of the next week with a bunch of red bands above price, that a pretty strong reversal signal. combine this with one of the two entry techniques above and you can ride it from the start.</li>
+                </ol>
+                <img src="images/Image (63" alt="Image.png" class="img-fluid rounded shadow-sm my-3" style="max-width: 800px;">.png)
+                <p><a href="https://www.tradingview.com/x/Y7MOBXa7/" target="_blank">BINGX:BTCUSDT.P Chart Image by IMGPro</a></p>
+            </div>
+        </div>
+    </section>
+
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="text-muted mb-0">IMG Pro Manual • Extracted on February 3rd, 2026</p>
+            <p class="text-muted small">Based on content from <a href="https://imgpro.craft.me"
+                    target="_blank">imgpro.craft.me</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

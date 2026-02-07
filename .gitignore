@@ -1,0 +1,22 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Project backups
+*_backup.html
+*.bak
+processed_content.html
+sections_to_add.html
+content-extraction.md
+remaining-sections-content.md
+EXTRACTION_GUIDE.md
+build_html.py
+convert_markdown.py
+fix_images.py
