@@ -3025,7 +3025,20 @@
                 let posX = x;
                 let posY = y;
 
-                if (x + width > window.innerWidth) posX = e.clientX - width - 15;
+                if (x + width > window.innerWidth) {
+                    posX = e.clientX - width - 15;
+                }
+
+                // Boundary check: ensure it doesn't go off-screen to the left
+                if (posX < 10) {
+                    posX = 10; // Minimum left margin
+                }
+
+                // Boundary check: ensure it doesn't go off-screen to the right (double check)
+                if (posX + width > window.innerWidth - 10) {
+                    posX = window.innerWidth - width - 10;
+                }
+
                 if (y + height > window.innerHeight) posY = e.clientY - height - 15;
 
                 tooltip.style.left = `${posX}px`;
