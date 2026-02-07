@@ -825,6 +825,7 @@ a:hover {
     background: var(--glass-bg);
     backdrop-filter: blur(var(--glass-blur));
     border: 1px solid var(--glass-border);
+    color: var(--text-primary);
 }
 
 .callout::before {
@@ -1107,6 +1108,7 @@ a:hover {
     padding: 1rem 1.25rem;
     margin: 1rem 0;
     border-radius: 0 6px 6px 0;
+    color: var(--text-primary);
 }
 
 .callout-warning::before {
@@ -1119,6 +1121,7 @@ a:hover {
     padding: 1rem 1.25rem;
     margin: 1rem 0;
     border-radius: 0 6px 6px 0;
+    color: var(--text-primary);
 }
 
 .callout-important::before {
