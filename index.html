@@ -1739,7 +1739,8 @@
                                         Level</strong> and <strong>SFP</strong> <strong>Low</strong> <strong>(
                                         stoploss)</strong> was 1.33%.
                                 </p>
-                                <img src="images/Image (41).png" alt="Image.png"
+                                <img src="images/max_trade_risk_invalid_setup.png"
+                                    alt="Invalid setup (grey box) showing max trade risk violation"
                                     class="img-fluid rounded shadow-sm my-3">
                                 <p>*Invalid setups will still display on the chart with a reason for invalidation (see:
                                     grey box
@@ -1763,18 +1764,19 @@
                                 <p>A value of 38.2% will display signals that tag the top and bottom 38.2% of the range
                                     (equivalent of the 61.8% OTE. retracement) Etc.</p>
                                 <p>*<strong>Range activation with 25 % premium /discount enabled:</strong>*</p>
-                                <div class="image-placeholder">📷 Image showing 25% premium/discount range activation
-                                </div>
+                                <img src="images/premium_discount_25_example.png"
+                                    alt="25% Premium Discount Range Example" class="img-fluid rounded shadow-sm my-3">
                                 <p>*<strong>Range activation with 38.2 % premium /discount enabled:</strong>*</p>
-                                <div class="image-placeholder">📷 Image showing 38.2% premium/discount range activation
-                                </div>
+                                <img src="images/premium_discount_38_example.png"
+                                    alt="38.2% Premium Discount Range Example" class="img-fluid rounded shadow-sm my-3">
                                 <h4 class="subsection-title">Invalidation Labels</h4>
                                 <p>When a setup is out of bounds based on these settings, a
                                     grey
                                     label will appear with details of why the signal is invalid (outside
                                     premium/discount
                                     levels)</p>
-                                <div class="image-placeholder">📷 Image showing invalidation label example</div>
+                                <img src="images/premium_discount_invalid_signal.png" alt="Invalid Signal Label Example"
+                                    class="img-fluid rounded shadow-sm my-3">
                                 <div class="alert alert-info">Max Open Longs / Shorts: Enter the maximum allowable
                                     concurrent
                                     open Longs and Shorts</div>
@@ -2098,31 +2100,46 @@
                                 <div class="alert alert-info">Use this section to setup custom trading days and intraday
                                     trading
                                     sessions</div>
-                                <p>| <strong>Trade</strong> <strong>on Specified Days:</strong> | Specify which days to
-                                    activate
-                                    trading on the indicator. Numeric values are assigned to each day: <br />1 = Sunday
-                                    <br />2
-                                    = Monday<br />3 = Tuesday etc |
-                                </p>
-                                <p>| -------------------------------------- |
-                                    ------------------------------------------------------------------------------------------------------------------------------------------------------
-                                    |</p>
-                                <p>| <strong>Session</strong> <strong>1</strong> | Enter a custom intraday session start
-                                    and end
-                                    time and toggle on to enable it. When enabled, trades will only be taken between the
-                                    start
-                                    and end times |</p>
-                                <p>| <strong>Session</strong> <strong>2</strong> | Enter a custom intraday session start
-                                    and end
-                                    time and toggle on to enable it. When enabled, trades will only be taken between the
-                                    start
-                                    and end times |</p>
-                                <p>| <strong>Session</strong> <strong>Timezone</strong> | Select your preferred timezone
-                                    for the
-                                    session timings entered above. Default is UTC. |</p>
-                                <p>| <strong>Auto Close Position at Session End</strong> | Enable to automatically close
-                                    any
-                                    positions at the end of each enabled session |</p>
+                                <div class="table-container">
+                                    <table class="settings-table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 30%;">Setting</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Trade on Specified Days</strong></td>
+                                                <td>Specify which days to activate trading on the indicator. Numeric
+                                                    values are assigned to each day: <br />1 = Sunday<br />2 =
+                                                    Monday<br />3 = Tuesday etc</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Session 1</strong></td>
+                                                <td>Enter a custom intraday session start and end time and toggle on to
+                                                    enable it. When enabled, trades will only be taken between the start
+                                                    and end times</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Session 2</strong></td>
+                                                <td>Enter a custom intraday session start and end time and toggle on to
+                                                    enable it. When enabled, trades will only be taken between the start
+                                                    and end times</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Session Timezone</strong></td>
+                                                <td>Select your preferred timezone for the session timings entered
+                                                    above. Default is UTC.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Auto Close Position at Session End</strong></td>
+                                                <td>Enable to automatically close any positions at the end of each
+                                                    enabled session</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </section>
