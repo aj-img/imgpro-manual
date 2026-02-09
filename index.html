@@ -1200,7 +1200,11 @@
 
                         <div class="card content-card">
                             <div class="card-body">
-                                <p>All OBs, OB+FVGs, Breakers and Breaker+FVGs remain valid as long as the HTF range
+                                <p>All <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Order Block: A market structure point of interest (candle) formed before a strong move.">OBs</span>,
+                                    <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Order Block + Fair Value Gap: A powerful confluence of an Order Block aligned with a Fair Value Gap.">OB+FVGs</span>,
+                                    Breakers and Breaker+FVGs remain valid as long as the HTF range
                                     remains
                                     valid. UNLESS “Use HTF Close Through to Invalidate OBs / BRKRs” is enabled in
                                     settings.</p>
@@ -1237,6 +1241,22 @@
                                 <div class="alert alert-info">This section of settings is where potential HTF-LTF trade
                                     setups
                                     at HTF POIs and early warning alerts are configured:</div>
+
+                                <!-- Educational Videos -->
+                                <div class="edu-videos" id="edu-htf-pois">
+                                    <div class="edu-videos-header">
+                                        <i class="bi bi-play-circle-fill"></i> Learn HTF POIs (Order Blocks)
+                                    </div>
+                                    <div class="edu-videos-grid">
+                                        <div class="edu-video-item">
+                                            <iframe class="edu-video-iframe"
+                                                src="https://www.youtube.com/embed/kS5F-d_B_7k"
+                                                allowfullscreen></iframe>
+                                            <div class="edu-video-title"><i class="bi bi-youtube"></i> How To Trade
+                                                Using Order Blocks</div>
+                                        </div>
+                                    </div>
+                                </div>
                     </section>
 
                     <!-- Section: Range Extremes & Old Untested -->
@@ -1250,7 +1270,9 @@
                                 <div class="alert alert-info">There are three types of alerts at Range Extremes:</div>
                                 <ol class="setup-steps">
                                     <li>Market Structure Breaks</li>
-                                    <li>HTF Swing Failure Patterns (SFPs)</li>
+                                    <li>HTF <span data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Swing Failure Pattern: A liquidity grab where price sweeps a level but closes back inside the range.">Swing
+                                            Failure Patterns (SFPs)</span></li>
                                     <li>HTF-LTF Setups</li>
                                 </ol>
                                 <hr class="my-4">
@@ -1746,7 +1768,9 @@
                                     grey box
                                     in screenshot)*</p>
                                 <hr class="my-4">
-                                <div class="alert alert-info">Premium / Discount:</div>
+                                <div class="alert alert-info"><span data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="Pricing levels relative to the range equilibrium (50%). Price above 50% is Premium (expensive), below is Discount (cheap).">Premium
+                                        / Discount</span>:</div>
                                 <p>The system can be setup to only display signals that are in the top or bottom n% of
                                     the HTF
                                     Market Structure Range</p>
@@ -2452,6 +2476,22 @@
                             <div class="card-body">
                                 <div class="alert alert-info"><strong>Introduction</strong></div>
 
+                                <!-- Educational Videos -->
+                                <div class="edu-videos" id="edu-aavwap">
+                                    <div class="edu-videos-header">
+                                        <i class="bi bi-play-circle-fill"></i> Learn Anchored VWAP
+                                    </div>
+                                    <div class="edu-videos-grid">
+                                        <div class="edu-video-item">
+                                            <iframe class="edu-video-iframe"
+                                                src="https://www.youtube.com/embed/qG0Q5zX0i3c"
+                                                allowfullscreen></iframe>
+                                            <div class="edu-video-title"><i class="bi bi-youtube"></i> The Only Trading
+                                                Indicator You Need - Anchored VWAP</div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <h4>What is Anchored VWAP?</h4>
                                 <p>The Volume Weighted Average Price (VWAP) is a key trading indicator that calculates
                                     the average price of an asset, weighted by volume, over a specified period. Unlike
@@ -3088,6 +3128,15 @@
                     link.addEventListener('click', closeSidebar);
                 });
             }
+        });
+    </script>
+    <!-- Tooltip Initialization -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
         });
     </script>
 </body>
