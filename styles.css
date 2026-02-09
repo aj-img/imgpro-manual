@@ -139,7 +139,7 @@ body {
    Responsive Layout
    ======================================== */
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
     .sidebar-right {
         display: none;
     }
