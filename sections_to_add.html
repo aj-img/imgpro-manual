@@ -1,0 +1,131 @@
+<!-- This file contains the HTML for all remaining sections to be added -->
+
+<!-- TRADE SETUPS SECTION -->
+<section id="trade-setups" class="content-section">
+    <div class="section-header">
+        <h2 class="section-title">Trade Setups</h2>
+        <p class="section-subtitle">Entry criteria and specific trading patterns</p>
+    </div>
+
+    <div class="card content-card">
+        <div class="card-body">
+            <h4 class="card-title">Setup Types</h4>
+            <p>Trade setups are specific conditions that signal potential entry opportunities based on HTF POI
+                interaction and LTF confirmation.</p>
+
+            <div class="accordion" id="setupTypesAccordion">
+                <!-- HTF SFP + LTF MSB -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#htf-sfp-setup">
+                            1. HTF SFP + LTF MSB (Primary Setup)
+                        </button>
+                    </h2>
+                    <div id="htf-sfp-setup" class="accordion-collapse collapse show"
+                        data-bs-parent="#setupTypesAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Description:</strong> Higher Timeframe Swing Failure Pattern followed by Lower
+                                Timeframe Market Structure Break</p>
+
+                            <h6>Conditions:</h6>
+                            <ol>
+                                <li>HTF POI must be present (OB, Breaker, FVG, or Range Extreme)</li>
+                                <li>Price creates SFP at HTF POI (false break/wick rejection)</li>
+                                <li>Price breaks LTF structure in favor direction</li>
+                                <li>Entry zone is established within the POI</li>
+                            </ol>
+
+                            <h6 class="mt-3">Example Scenario:</h6>
+                            <div class="alert alert-info" role="alert">
+                                <ul class="mb-0">
+                                    <li>HTF Bullish OB at 100</li>
+                                    <li>Price wicks below 100 to 99.80 (SFP)</li>
+                                    <li>Price breaks above LTF high creating MSB</li>
+                                    <li>Entry zone: 100-100.20</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--LTF SFP + LTF MSB -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#ltf-sfp-setup">
+                            2. LTF SFP + LTF MSB (OBs/Breakers/FVGs only)
+                        </button>
+                    </h2>
+                    <div id="ltf-sfp-setup" class="accordion-collapse collapse" data-bs-parent="#setupTypesAccordion">
+                        <div class="accordion-body">
+                            <p><strong>Description:</strong> Lower Timeframe SFP at a specific POI type with LTF MSB
+                                confirmation</p>
+
+                            <h6>Conditions:</h6>
+                            <ol>
+                                <li>Must be at OB, Breaker, or FVG (Range Extremes excluded)</li>
+                                <li>LTF SFP at the POI level</li>
+                                <li>LTF MSB in favor direction</li>
+                                <li>Tighter risk parameters than HTF setups</li>
+                            </ol>
+
+                            <h6 class="mt-3">Priority Order:</h6>
+                            <ol>
+                                <li>Breakers (highest priority)</li>
+                                <li>OB + FVG confluence</li>
+                                <li>Breakers + FVG confluence</li>
+                                <li>Large OBs</li>
+                                <li>Large FVGs</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Setup Parameters -->
+    <div class="card content-card">
+        <div class="card-body">
+            <h4 class="card-title">Setup Parameters & Filtering</h4>
+
+            <h6>SFP Detection Sensitivity</h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="param-box">
+                        <h6 class="text-primary">Conservative</h6>
+                        <p class="mb-0">Larger wicks required (>50% of POI)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="param-box">
+                        <h6 class="text-primary">Moderate</h6>
+                        <p class="mb-0">Medium wicks (>25% of POI)</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="param-box">
+                        <h6 class="text-primary">Aggressive</h6>
+                        <p class="mb-0">Small wicks acceptable (>10% of POI)</p>
+                    </div>
+                </div>
+            </div>
+
+            <h6 class="mt-4">MSB Confirmation Levels</h6>
+            <ul>
+                <li><strong>Strict:</strong> Wait for close beyond structure</li>
+                <li><strong>Moderate:</strong> Break high/low is enough</li>
+                <li><strong>Aggressive:</strong> Wick beyond structure</li>
+            </ul>
+
+            <h6 class="mt-3">Setup Invalidation Conditions</h6>
+            <ul>
+                <li>Opposite structure break</li>
+                <li>POI fully mitigated</li>
+                <li>Time-based expiration</li>
+                <li>Distance from POI exceeded</li>
+            </ul>
+        </div>
+    </div>
+</section>
