@@ -2033,7 +2033,7 @@
 
                                 <div class="alert alert-info mt-3">
                                     <i class="bi bi-info-circle-fill me-2"></i>
-                                    <strong>Logic:</strong> Once the first fractual signal prints, subsequent signals
+                                    <strong>Logic:</strong> Once the first fractal signal prints, subsequent signals
                                     will continue to generate inside the valid range until invalidation.
                                 </div>
 
@@ -2434,7 +2434,7 @@
                                     the system treated this setup as invalid as the price variance between the
                                     <strong>MSB
                                         Level</strong> and <strong>SFP</strong> <strong>Low</strong> <strong>(
-                                        stoploss)</strong> was 1.33%.
+                                        Stop Loss)</strong> was 1.33%.
                                 </p>
                                 <img src="images/max_trade_risk_invalid_setup.png"
                                     alt="Invalid setup (grey box) showing max trade risk violation"
@@ -2462,11 +2462,11 @@
                                     range and vice versa.</p>
                                 <p>A value of 38.2% will display signals that tag the top and bottom 38.2% of the range
                                     (equivalent of the 61.8% OTE. retracement) Etc.</p>
-                                <p class="fst-italic text-secondary mb-1">Range activation with 25 % premium /discount
+                                <p class="fst-italic text-secondary mb-1">Range activation with 25% premium /discount
                                     enabled:</p>
                                 <img src="images/premium_discount_25_example.png"
                                     alt="25% Premium Discount Range Example" class="img-fluid rounded shadow-sm my-3">
-                                <p class="fst-italic text-secondary mb-1">Range activation with 38.2 % premium /discount
+                                <p class="fst-italic text-secondary mb-1">Range activation with 38.2% premium /discount
                                     enabled:</p>
                                 <img src="images/premium_discount_38_example.png"
                                     alt="38.2% Premium Discount Range Example" class="img-fluid rounded shadow-sm my-3">
@@ -4107,7 +4107,7 @@
                                 <h5 class="mt-4">Why use Custom Timeframes?</h5>
                                 <p>
                                     Standard timeframes (Daily, Weekly) are great, but sometimes the market structure is
-                                    clearer on intermediate frames like the <strong>12-Hour (H12)</strong> or
+                                    clearer on intermediate frames like the <strong>H12 (12-Hour)</strong> or
                                     <strong>2-Day (2D)</strong>. Adding these gives you more flexibility to find the
                                     "cleanest" trend.
                                 </p>
@@ -4727,33 +4727,6 @@
             setTimeout(initGlossary, 500);
         });
 
-        // Mobile Sidebar Toggle Logic
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.getElementById('menuToggle');
-            const sidebarOverlay = document.getElementById('sidebarOverlay');
-            const sidebar = document.querySelector('.sidebar-left');
-            const navLinks = document.querySelectorAll('.sidebar-nav a');
-
-            if (menuToggle && sidebarOverlay && sidebar) {
-                menuToggle.addEventListener('click', function () {
-                    sidebar.classList.add('active');
-                    sidebarOverlay.classList.add('active');
-                    document.body.style.overflow = 'hidden'; // Prevent background scroll
-                });
-
-                const closeSidebar = function () {
-                    sidebar.classList.remove('active');
-                    sidebarOverlay.classList.remove('active');
-                    document.body.style.overflow = '';
-                };
-
-                sidebarOverlay.addEventListener('click', closeSidebar);
-
-                navLinks.forEach(link => {
-                    link.addEventListener('click', closeSidebar);
-                });
-            }
-        });
     </script>
     <!-- Tooltip Initialization -->
     <script>
@@ -4766,6 +4739,8 @@
     </script>
     <!-- Search Functionality -->
     <script src="search.js"></script>
+    <!-- Mobile Navigation -->
+    <script src="mobile-nav.js"></script>
 </body>
 
 </html>
