@@ -1,0 +1,21 @@
+/* Hero Logo Styling */
+.hero-logo-img {
+    filter: drop-shadow(0 0 15px rgba(88, 166, 255, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.hero-logo-img:hover {
+    transform: scale(1.05) rotate(-2deg);
+    filter: drop-shadow(0 0 20px rgba(163, 113, 247, 0.4));
+}
+
+@media (max-width: 768px) {
+    .hero-section .d-flex {
+        text-align: center;
+    }
+
+    .hero-logo-img {
+        width: 100px;
+        margin-bottom: 1rem;
+    }
+}
