@@ -1,0 +1,15 @@
+# Old working copies and notes are not part of the manual: keep them out of search results.
+/index_new
+  X-Robots-Tag: noindex
+/index_new.html
+  X-Robots-Tag: noindex
+/processed_content
+  X-Robots-Tag: noindex
+/processed_content.html
+  X-Robots-Tag: noindex
+/sections_to_add
+  X-Robots-Tag: noindex
+/sections_to_add.html
+  X-Robots-Tag: noindex
+/*.md
+  X-Robots-Tag: noindex
